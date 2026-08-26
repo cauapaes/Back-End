@@ -1,0 +1,23 @@
+function calcularIngressos() {
+  // Trapézio
+  const bMaior = 120;
+  const bMenor = 75;
+  const alturaTrapezio = 145;
+  const areaTotalTrapezio = ((bMaior + bMenor) / 2) * alturaTrapezio;
+
+  // Palco (retângulo)
+  const areaPalco = 15 * 8.5;
+
+  // Área útil para o público
+  const areaPublico = areaTotalTrapezio - areaPalco;
+
+  // 4 pessoas por m²
+  const totalIngressos = Math.floor(areaPublico * 4);
+
+  console.log(`Área total do espaço: ${areaTotalTrapezio} m²`);
+  console.log(`Área do palco: ${areaPalco} m²`);
+  console.log(`Área livre para público: ${areaPublico} m²`);
+  console.log(`Total de ingressos que podem ser vendidos: ${totalIngressos}`);
+}
+
+calcularIngressos();
