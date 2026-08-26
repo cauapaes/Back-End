@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        // Instanciando um novo pedido
+        Pedido pedido1 = new Pedido(101);
+
+        // Adicionando itens ao pedido (a instância de ItemPedido é criada internamente)
+        pedido1.adicionarItem("Hambúrguer Artesanal", 35.50);
+        pedido1.adicionarItem("Batata Frita", 18.00);
+        pedido1.adicionarItem("Refrigerante Lada", 7.50);
+
+        // Exibindo o resumo do pedido
+        pedido1.exibirResumo();
+    }
+}
