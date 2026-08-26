@@ -1,0 +1,11 @@
+function calcularPontosGabriel() {
+  const mariana = 18;
+  const sabrina = 22;
+
+  // 1/4 da soma + 17
+  const gabriel = ((mariana + sabrina) / 4) + 17;
+
+  console.log(`Gabriel tem ${gabriel} pontos.`);
+}
+
+calcularPontosGabriel();
