@@ -1,0 +1,12 @@
+function simularVazamento() {
+  let volume = 150;
+  const vazamento = 7;
+
+  while (volume - vazamento >= 0) {
+    volume -= vazamento;
+  }
+
+  console.log(`Volume restante na caixa d'água: ${volume} litros.`);
+}
+
+simularVazamento();
