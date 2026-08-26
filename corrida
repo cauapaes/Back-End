@@ -1,0 +1,16 @@
+function corrida() {
+  let v1 = 10;
+  let v2 = 20;
+  let volta = 0;
+
+  while (v1 <= v2) {
+    volta++;
+    v1 += 3;
+    v2 += 1.5;
+    console.log(`Volta ${volta} -> Carro 1: ${v1} km/h | Carro 2: ${v2} km/h`);
+  }
+
+  console.log(`\nO Carro 1 ultrapassou o Carro 2 em ${volta} voltas.`);
+}
+
+corrida();
