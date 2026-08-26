@@ -1,0 +1,12 @@
+function calcularCofrinho() {
+  let totalAcumulado = 0;
+
+  for (let dia = 1; dia <= 12; dia++) {
+    let deposito = dia * 2;
+    totalAcumulado += deposito;
+  }
+
+  console.log(`Valor acumulado após 12 dias: R$ ${totalAcumulado.toFixed(2)}`);
+}
+
+calcularCofrinho();
