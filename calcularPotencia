@@ -1,0 +1,11 @@
+function calcularPotencia(base, expoente) {
+  let resultado = 1;
+
+  for (let i = 1; i <= expoente; i++) {
+    resultado *= base;
+  }
+
+  console.log(`${base}^${expoente} = ${resultado}`);
+}
+
+calcularPotencia(2, 5); // 32
