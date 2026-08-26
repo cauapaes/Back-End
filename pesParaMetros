@@ -1,0 +1,8 @@
+function pesParaMetros(pes) {
+  const metros = pes * 0.3048;
+  return metros;
+}
+
+// Exemplo: 6 pés e 7 polegadas (~6.58 pés - altura de Stephen Curry)
+const alturaPes = 6.58;
+console.log(`${alturaPes} pés correspondem a ${pesParaMetros(alturaPes).toFixed(2)} metros.`);
