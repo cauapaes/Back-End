@@ -1,0 +1,18 @@
+function crescimentoPopulacional() {
+  let popNigeria = 195.9; // Em milhões
+  let popChina = 1393.0;  // Em milhões
+  let taxaNigeria = 0.038;
+  let taxaChina = 0.0037;
+  let anos = 0;
+
+  while (popNigeria <= popChina) {
+    anos++;
+    popNigeria += popNigeria * taxaNigeria;
+    popChina += popChina * taxaChina;
+    console.log(`Ano ${anos}: Nigéria = ${popNigeria.toFixed(2)}M, China = ${popChina.toFixed(2)}M`);
+  }
+
+  console.log(`\nSerão necessários ${anos} anos para a Nigéria ultrapassar a China.`);
+}
+
+crescimentoPopulacional();
