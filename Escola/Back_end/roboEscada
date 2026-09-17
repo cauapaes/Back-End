@@ -1,0 +1,11 @@
+function roboEscada() {
+  const totalDegraus = 20;
+  const tempoPorDegrau = 3;
+
+  for (intDegrau = 1; intDegrau <= totalDegraus; intDegrau++) {
+    let tempoTotal = intDegrau * tempoPorDegrau;
+    console.log(`Degrau ${intDegrau}: ${tempoTotal} segundos`);
+  }
+}
+
+roboEscada();

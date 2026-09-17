@@ -1,0 +1,13 @@
+function calcularPrecoVenda() {
+  // Preço de venda = 360 corresponde a 80% do valor de custo (100%)
+  // Custo = 360 / 0.80 = 450
+  const valorCusto = 360 / 0.80;
+
+  // Para ter 20% de lucro sobre o custo: Custo * 1.20
+  const valorComLucro = valorCusto * 1.20;
+
+  console.log(`Valor de custo do violão: R$ ${valorCusto.toFixed(2)}`);
+  console.log(`Preço de venda para 20% de lucro: R$ ${valorComLucro.toFixed(2)}`);
+}
+
+calcularPrecoVenda();

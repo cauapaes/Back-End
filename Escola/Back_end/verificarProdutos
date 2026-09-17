@@ -1,0 +1,25 @@
+function verificarProdutos() {
+  const dataAtual = new Date();
+
+  while (true) {
+    let nome = prompt("Digite o nome do produto (ou 'sair' para encerrar):");
+    if (!nome || nome.toLowerCase() === "sair") break;
+
+    let dataStr = prompt("Digite a data de vencimento (AAAA-MM-DD):");
+    let dataVencimento = new Date(dataStr);
+
+    if (isNaN(dataVencimento.getTime())) {
+      console.log("Data inválida!");
+      continue;
+    }
+
+    if (dataVencimento < dataAtual) {
+      console.log(` O produto "${nome}" está VENCIDO!`);
+    } else {
+      console.log(` O produto "${nome}" está dentro da validade.`);
+    }
+  }
+}
+
+// Para executar no navegador ou ambiente com prompt():
+// verificarProdutos();

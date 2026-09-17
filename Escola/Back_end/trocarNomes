@@ -1,0 +1,13 @@
+function trocarNomes(interacoes) {
+  let primeiroNome = "will";
+  let segundoNome = "lucas";
+
+  for (let i = 1; i <= interacoes; i++) {
+    // Troca de valores usando desestruturação do ES6
+    [primeiroNome, segundoNome] = [segundoNome, primeiroNome];
+
+    console.log(`Iteração ${i} -> primeiroNome: "${primeiroNome}", segundoNome: "${segundoNome}"`);
+  }
+}
+
+trocarNomes(4);

@@ -1,0 +1,11 @@
+function numerosImpares(inicio, fim) {
+  console.log(`Ímpares entre ${inicio} e ${fim}:`);
+  for (let i = inicio; i <= fim; i++) {
+    if (i % 2 !== 0) {
+      console.log(i);
+    }
+  }
+}
+
+// Exemplo de uso:
+numerosImpares(5, 15);
